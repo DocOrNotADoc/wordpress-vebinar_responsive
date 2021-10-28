@@ -20,15 +20,20 @@ html {
     padding: 39px 0px 62px 0px;
 }
 
-.logo .logo_img, .gift .gift_logo, .firstWebinar .firstWebinar_img {
+.logo_img,.gift_logo, .firstWebinar_img {
     display: block;
     margin: 0 auto;
 }
-.gift .gift_logo {
+.gift_logo {
     margin-top: 86px;
 }
-.firstWebinar .firstWebinar_img {
-    margin-top: 169px;
+.firstWebinar {
+    img {
+        display: block;
+        margin: 0 auto;
+        margin-top: 169px;
+        width: 342px;
+    }
 }
 
 h1  {
@@ -124,29 +129,29 @@ h2.title {
 .waiting {
     min-height: 604px;
     background-color: #efefef;
-    padding: 85px 0 75px 0;
+    padding: 85px 0 50px 0;
 }
 
-.waiting .waiting_header, .finish .finish_header {
+.waiting_ttl, .finish_ttl {
     color: #252525;
     font-size: 30px;
-    font-weight: 400;
+    font-weight: 500;
     text-transform: uppercase;
     text-align: center;
 }
-.finish .finish_header {
+.finish_ttl {
     color: #efefef;
 }
 
-.waiting .waiting_divider, .finish .finish_divider {
+.divider {
     margin: 0 auto;
-    margin-top: 18px;
+    margin-top: 19px;
     width: 217px;
     height: 4px;
     background-color: #f9bf3b;
 }
 
-.waiting .waiting_subheader {
+.waiting_subttl {
     margin-top: 17px;
     color: #4a4a4a;
     font-size: 23px;
@@ -154,22 +159,21 @@ h2.title {
     text-align: center;
 }
 
-.waiting .waiting_wrapper {
+.waiting_wrapper {
     display: flex;
-    justify-content: space-between;
-    margin-top: 45px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 25px;
+
 }
 
-.waiting .waiting_wrapper .waiting_item {
+.waiting_item {
     width: 339px;
+    margin: 25px 20px;
     text-align: center;
 }
 
-.waiting .waiting_wrapper .waiting_item .waiting_img {
-    max-width: 100%;
-}
-
-.waiting .waiting_wrapper .waiting_item .waiting_descr {
+.waiting_descr {
     margin-top: 33px;
     color: #4a4a4a;
     font-size: 15px;
@@ -179,10 +183,11 @@ h2.title {
 
 .optimization {
     min-height: 550px;
-    padding: 102px 0 107px 0;
+    padding: 102px 35px 107px 0;
+    overflow: hidden;
 }
 
-.optimization .optimization_header {
+.optimization_ttl {
     margin-left: 391px;
     /* от колонок */
     color: #299cbd;
@@ -191,11 +196,11 @@ h2.title {
     text-transform: uppercase;
 }
 
-.optimization .optimization_text {
+.optimization_text {
     margin-top: 25px;
     margin-left: 391px;
-    width: 750px;
-    height: 289px;
+    // width: 750px;
+    // height: 289px;
     color: #4a4a4a;
     font-size: 17px;
     font-weight: 300;
@@ -203,11 +208,11 @@ h2.title {
     font-weight: 300;
 }
 
-.optimization .optimization_text span {
+.optimization_text span {
     font-weight: 700;
 }
 
-.optimization .optimization_img {
+.optimization img {
     position: absolute;
     top: -54px;
     left: -240px;
@@ -219,18 +224,21 @@ h2.title {
     padding: 86px 0 79px 0;
     background: url('../img/bg/finisher.png') center center/cover no-repeat;
 }
-
-.finish .finish_wrapper {
-    margin-top: 41px;
+.finish_wrapper {
+    margin-top: 11px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    :last-child {
+        margin-right: 0;
+    }
 }
-
-.finish .finish_wrapper .finish_item {
+.finish_item {
     width: 204px;
+    margin-right: 29px;
+    margin-top: 30px;
 }
-
-.finish .finish_wrapper .finish_item .finish_round {
+.finish_round {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -241,7 +249,7 @@ h2.title {
     border-radius: 100%;
 }
 
-.finish .finish_wrapper .finish_item .finish_descr {
+.finish_descr {
     margin-top: 25px;
     text-align: center;
     color: #efefef;
@@ -255,7 +263,7 @@ h2.title {
     margin-top: 86px 0 87px 0;
 }
 
-.gift .gift_descr {
+.gift_descr {
     margin-top: 42px;
     color: #252525;
     font-size: 30px;
@@ -264,7 +272,7 @@ h2.title {
     text-align: center;
 }
 
-.firstWebinar .firstWebinar_header {
+.firstWebinar_ttl {
     margin-top: 37px;
     color: #252525;
     font-size: 30px;
@@ -273,7 +281,7 @@ h2.title {
     text-align: center;
 }
 
-.firstWebinar .firstWebinat_date {
+.firstWebinar_date {
     margin-top: 30px;
     color: #299cbd;
     font-size: 36px;
@@ -282,7 +290,7 @@ h2.title {
     text-align: center;
 }
 
-.firstWebinar .firstWebinat_descr {
+.firstWebinar_descr {
     margin-top: 25px;
     color: #4a4a4a;
     font-size: 23px;
@@ -295,10 +303,10 @@ footer {
     width: 100%;
     min-height: 166px;
     background-color: #1a1a1a;
+    padding: 61px 0;
 }
 
 footer .footer-contents, footer .footer-contents a {
-    padding: 61px 0 69px 0;
     color: #888888;
     font-size: 15px;
     font-weight: 300;

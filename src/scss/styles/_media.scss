@@ -1,12 +1,11 @@
-// @media (max-width: 1399px) {
-
-// }
-
 //ipad pro
 @media (max-width: 1199px) {
   .container {
     width: 100%;
     padding: 0 10px;
+  }
+  .divider {
+    margin-top: 50px;
   }
   .promo {
     height: 100vh;
@@ -22,6 +21,50 @@
   h1 {
     margin-top: 21vh;
   }
+  .optimization{
+    &_ttl, &_text {
+      margin-left: 33vw;
+      background-color: rgba(#fff, .7);
+      border: 1px rgba(#fff, .7);
+      box-shadow: 0 0 30px 30px rgba(#fff, .7);
+      z-index: 8;
+    }
+    & img {
+      top: 70px;
+    }
+  }
+  .finish {
+    padding: 90px 0 80px 0;
+    &_wrapper {
+      max-width: 748px;
+      margin: 0 auto;
+      margin-top: 62px;
+    }
+    &_item {
+      margin: 5px 20px;
+    }
+  }
+  .gift {
+    &_descr {
+      width: 75%;
+      margin: 0 auto;
+      margin-top: 42px;
+    }
+  }
+  .firstWebinar {
+    img {
+      margin-top: 169px;
+    }
+    &_ttl {
+      margin-top: 45px;
+    }
+    &_date {
+      margin-top: 14px;
+    }
+    &_descr {
+      margin-top: 23px;
+    }
+  } 
 }
 //ipad, tab
 @media (max-width: 991px) {
@@ -30,6 +73,9 @@
     &_big {
       font-size: 51px;
     }
+  }
+  .divider {
+    margin-top: 70px;
   }
   .promo {
     &_text {
@@ -42,18 +88,55 @@
   h1 {
     margin-top: 14vh;
   }
-
   .more {
     margin-top: 3vh;
   }
+  .optimization{
+    & img {
+      top: 182px;
+      left: -182px;
+    }
+  }
+  .waiting {
+    padding: 65px 0 25px 0;
+  }
+  .finish {
+    padding: 90px 0 80px 0;
+    &_wrapper {
+      margin-top: 90px;
+    }
+  }
+
+  .firstWebinar {
+    img {
+      margin-top: 153px;
+    }
+    &_ttl {
+      margin-top: 45px;
+    }
+    &_date {
+      margin-top: 14px;
+    }
+    &_descr {
+      margin-top: 23px;
+    }
+  } 
+
+  footer {
+    padding: 28px 0;
+    min-height: 42px;
+  }
 }
-// tab
-// @media (max-width: 767px) {
-  
-// }
 
 //cell
 @media (max-width: 575px) {
+  .container {
+    padding: 0 20px;
+  }
+  .divider {
+    width: 180px;
+    margin-top: 40px;
+  }
   .title {
     font-size: 22px;
     line-height: 31px;
@@ -86,5 +169,100 @@
   }
   .promo_btn, .gift_btn {
     font-size: 16px;
+  }
+
+  .waiting_ttl, .finish_ttl, .optimization_ttl {
+    font-size: 22px;
+  }
+  .waiting_subttl {
+    font-size: 18px;
+    margin-top: 12px;
+  }
+  .waiting_wrapper {
+    margin-top: 5px;
+  }
+  .divider {
+    width: 186px;
+  }
+  .waiting_item {
+    width: 90%;
+    margin: 22px 0;
+    img {
+      width: 100%;
+    }
+  }
+  .waiting_descr {
+    margin-top: 20px;
+  }
+  .optimization {
+    .container{
+      padding: 0;
+    }
+    padding: 25px 0;
+    &_ttl, &_text {
+      margin: 0 auto;
+      padding: 0 25px;
+    }
+    &_ttl {
+      text-align: center;
+    }
+    &_text {
+      margin-top: 20px;
+      background-color: rgba(#fff, .8);
+      border: none;
+      box-shadow: none;
+    }
+    img {
+      top: 181px;
+      left: -243px;
+    }
+  }
+  
+  
+  .finish {
+    padding: 65px 0;
+    &_wrapper {
+      max-width: 748px;
+      margin: 0 auto;
+      margin-top: 48px;
+    }
+    &_item {
+      margin: 23px 0;
+    }
+  }
+
+  .gift {
+    &_descr {
+      font-size: 22px;
+      line-height: 31px;
+      width: 100%;
+    }
+    &_logo {
+      margin-top: 80px;
+    }
+  }
+  
+
+  .firstWebinar {
+    img {
+      margin-top: 115px;
+      width: 100%;
+    }
+    &_ttl {
+      margin-top: 27px;
+      font-size: 19px;
+    }
+    &_date {
+      font-size: 25px;
+    }
+    &_descr {
+      margin-top: 17px;
+      padding-bottom: 50px;
+      font-size: 14px;
+    }
+  } 
+
+  footer {
+    padding: 12px 0;
   }
 }
